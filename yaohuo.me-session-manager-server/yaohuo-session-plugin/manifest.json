@@ -1,0 +1,19 @@
+//manifest.json
+{
+  "manifest_version": 2,
+  "name": "Yaohuo Session gpt",
+  "version": "1.0",
+  "description": "保存并恢复 yaohuo.me 的用户会话信息",
+  "permissions": ["cookies", "storage", "tabs", "http://*/", "https://*/","activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Yaohuo 会话管理器"
+  },
+"content_scripts": [
+  {
+    "matches": ["*://*.yaohuo.me/*"],
+    "js": ["lib/crypto-js.min.js","content.js"],
+    "run_at": "document_end"
+  }
+]
+}
