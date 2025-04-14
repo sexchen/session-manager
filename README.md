@@ -1,7 +1,7 @@
 # session-manager
-对某个网站的sessionStorage 进行保存并恢复
-该拓展被设置为特定网站+特定数据读取，如需使用需自行修改代码
-session-manager将数据保存在localStorage 中，server版将数据保存在本地json中，用以支持多设备同步及大数据保存。
+对某个网站的sessionStorage 进行保存并恢复  
+该拓展被设置为特定网站+特定数据读取，如需使用需自行修改代码  
+session-manager将数据保存在localStorage 中，server版将数据保存在本地json中，用以支持多设备同步及大数据保存。  
 
 #### 环境
 
