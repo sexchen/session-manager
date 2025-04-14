@@ -1,0 +1,20 @@
+//manifest.json
+{
+  "manifest_version": 3,
+  "name": "Yaohuo Session Manager",
+  "version": "1.0",
+  "permissions": ["storage", "cookies", "activeTab","scripting"],
+  "host_permissions": ["https://yaohuo.me/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://yaohuo.me/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
